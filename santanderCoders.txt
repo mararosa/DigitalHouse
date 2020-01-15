@@ -1,0 +1,42 @@
+program  {
+  Mover(Leste)
+  Mover(Leste)
+  Mover(Sul)
+}  
+
+
+program {
+  Colocar(Vermelho)
+  Colocar(Vermelho)
+  Colocar(Azul)
+  Colocar(Verde)
+  Colocar(Vermelho)
+}
+
+program {
+  Retirar(Vermelho)
+  Retirar(Vermelho)
+}
+
+program {
+  Mover(Sul)
+  Retirar(Vermelho)
+}
+
+Ou seja: coloque uma pedra vermelha na posição inicial e uma pedra preta no leste
+program {
+  Colocar(Vermelho)
+  Mover(Leste)
+  Colocar(Preto)
+}
+
+
+A partir dos próximos exercícios, usaremos o ";" como no exemplo anterior.
+
+Agora faça o teste e crie as variáveis meses e quantidadeDeAlunos.
+
+Após criar a variável vá para a aba _Consola e escreva somente o nome da variável, pressione enter e veja o que acontece.
+
+var numero = 124;
+var numeroSeguinte = numero + 1;
+console.log(numeroSeguinte); 
