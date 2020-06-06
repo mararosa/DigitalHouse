@@ -446,6 +446,13 @@ pertences.push ("amuleto mágico");
 //   }
 // }
 
+///////Nao precisa de if ou for>>>>
+function contem(array, numero) { 
+ 
+    return array.indexOf(numero) != -1;
+      }
+   console.log( contem([1,6,5], 6))  
+
 //////////////////////////////// com if
 // function contem(array, element) {
 //   for (var i = 0; i < array.length -1; i++) {
