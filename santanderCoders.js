@@ -594,7 +594,24 @@ mas o problema é que com algo indefinido você não pode fazer nada realmente �
 
 // // //Queremos escrever uma função naipeDeTruco, que dado um naipe, devolva uma lista de strings, 
 // // //uma por cada carta desse naipe seguindo as cartas do truco: Lembre-se! As cartas incluem todos os números, com exceção das cartas 8 e 9
+///atualizando
+function naipeDeTruco(naipe) {
+    var cartas = [];
+    for (num = 1; num <= 12; num++) {
+        if (num == 8) {
+        num = 9
+        }
+        else {
+            cartas.push(num + " de " + naipe)
+        }
+       
+    }
 
+    return cartas;
+}
+
+console.log(naipeDeTruco("espadas"))
+////////////////////
 // function naipeDeTruco(naipe) {
 //   var cartas = [];
 //   for (var num = 1; num <= 12; num++) {
@@ -647,7 +664,7 @@ function maisMenos(num) {
   quantidadeZeros /= num.length
   quantidadeNegativos /= num.length
   novoArray.push(quantidadePositivos, quantidadeZeros, quantidadeNegativos)
-  return num = novoArray
+  return novoArray;
 }
 console.log(maisMenos([0, 0, 0, 0, -2, -3, -4, -5]))
 
